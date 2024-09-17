@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun with DOM Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    #colorful-text {
+      font-size: 24px;
+      margin: 20px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      background-color: #ccc;
+      border: 2px solid #333;
+      transition: background-color 0.5s;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the DOM Playground!</h1>
+
+  <p id="colorful-text">Click the button to change my color!</p>
+
+  <button id="color-button">Change Color</button>
+
+  <div class="boxes">
+    <div class="box" id="box1" data-state="0"></div>
+    <div class="box" id="box2" data-clicks="0"></div>
+    <div class="box" id="box3" data-clicks="0"></div>
+  </div>
+
+  <button id="reset-button">Reset Boxes</button>
+  <script src="script.js"></script>
+</body>
+</html>
